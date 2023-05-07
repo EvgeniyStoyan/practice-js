@@ -1,0 +1,39 @@
+.container-dflex {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include breakpoint(tab) {
+    flex-direction: column;
+    gap: 100px;
+  }
+  @include breakpoint(des) {
+    flex-direction: row;
+    gap: 40px;
+
+    gap: 40px;
+  }
+
+  & > .aside {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+
+    @include breakpoint(tab) {
+      flex-direction: row;
+      gap: 32px;
+    }
+    @include breakpoint(des) {
+      flex-direction: column;
+      flex-basis: 26.33%;
+      gap: 86px;
+    }
+  }
+  & > .main {
+    @include breakpoint(des) {
+      flex-basis: 73.67%;
+    }
+  }
+}
