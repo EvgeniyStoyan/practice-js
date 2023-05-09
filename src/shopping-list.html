@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshelf</title>
     <link rel="icon" href="./images/png/Icon.png" />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./shoping-list.js"></script>
   </head>
   <body>
-    <include src="./partials/header.html"></include>
-    <div class="container container-dflex">
-      <div class="aside">
+    <header>
+      <include src="./partials/header.html"></include>
+    </header>
+    <main class="container container-dflex">
+      <aside class="aside">
         <include src="./partials/support-ukraine.html"></include>
-      </div>
-      <main class="main">
+      </aside>
+      <div class="content">
         <include src="./partials/shopping-list.html"></include>
-      </main>
-    </div>
+      </div>
+    </main>
+    <footer></footer>
+
     <include src="./partials/sing-up.html"></include>
     <include src="./partials/modal-book.html"></include>
     <include src="./partials/scroll-up.html"></include>

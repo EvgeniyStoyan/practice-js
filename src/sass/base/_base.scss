@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'DMSans-400italic';
+  src: url('../fonts/dmsans-italic-webfont.woff2') format('woff2'),
+    url('../fonts/dmsans-italic-webfont.woff') format('woff');
+}
+@font-face {
   font-family: 'DMSans-400';
   src: url('../fonts/dmsans-regular.woff2') format('woff2'),
     url('../fonts/dmsans-regular.woff') format('woff');
@@ -14,12 +19,17 @@
     url('../fonts/dmsans-bold.woff') format('woff');
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'DMSans-400';
   font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
   color: $black;
-  scroll-behavior: smooth;
+  position: relative;
+  background-color: $background;
 }
 
 a {
@@ -41,6 +51,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 button {
   margin: 0;
@@ -57,6 +68,6 @@ svg {
   }
   @include breakpoint(des) {
     padding: 0 24px;
-    max-width: 1392px;
+    max-width: 1440px;
   }
 }

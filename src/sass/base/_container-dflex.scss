@@ -10,8 +10,6 @@
   @include breakpoint(des) {
     flex-direction: row;
     gap: 40px;
-
-    gap: 40px;
   }
 
   & > .aside {
@@ -27,13 +25,13 @@
     }
     @include breakpoint(des) {
       flex-direction: column;
-      flex-basis: 26.33%;
+      flex-basis: 26.3%;
       gap: 86px;
     }
   }
-  & > .main {
+  & > .content {
     @include breakpoint(des) {
-      flex-basis: 73.67%;
+      flex-basis: 73.7%;
     }
   }
 }

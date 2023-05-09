@@ -1,20 +1,16 @@
-<button class="btn modal-open" type="button">
-    Sign up
-  </button>
-
 
 <div class="backdrop is-hidden  modal">
-   
+
 <div class="modal_sing_up">
     <button type="button" class="modal_cross modal-close">
-        <svg id="icon-cross">
+        <svg class="icon-cross">
             <use href="./images/icons.svg#icon-cross"></use>
         </svg>
     </button>
 
     <div class="container_forms">
 
-      <div class="registration_form">
+    <div class="registration_form">
         <form class="sign_up_form ">
             <div class="sign_up_name">
                 <input
@@ -26,27 +22,29 @@
                 required>
             </div>
             
-            <div class="sign_up_email">
+            <div  class="sign_up_email">
+               
                 <input
-                class="sign_up_input"
-                type="tel"
-                placeholder="EMAIL"
-                pattern="[0-9]{10}"
-                title="Enter your phone number in this format: 000 000 00 00"
-                required>
-                <svg  class="icon_email">
-                    <use href="./images/icons.svg#icon-email"></use>
-                </svg>
+                        class="sign_up_input"
+                        type="tel"
+                        placeholder="EMAIL"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        title="Enter your mail in this format: name@mail.com"
+                        required>
+                        <svg  class="icon-email">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
             </div>
             
             <div class="sign_up_password">
                 <input
-                        class="sign_up_input"
-                        type="password"
-                        placeholder="PASSWORD">
-                        <svg  class="icon_lock">
-                            <use href="./images/icons.svg#icon-lock"></use>
-                        </svg>
+                class="sign_up_input"
+                type="password"
+                placeholder="PASSWORD"
+                required>
+                <svg class="icon-lock">
+                    <use href="./images/icons.svg#icon-lock"></use>
+                </svg>
             </div>
             
             <div>
@@ -54,32 +52,32 @@
             </div>
             
         </form>
-      </div>
+    </div>
 
-      <div class="login_form hidden">
-        <form class="sign_in_form ">
+    <div class="login_form hidden">
+        <form class="sign_in_form">
             
             <div class="sign_up_email">
                 <input
-                class="sign_up_input"
-                type="tel"
-                placeholder="EMAIL"
-                pattern="[0-9]{10}"
-                title="Enter your phone number in this format: 000 000 00 00"
-                required>
-                <svg  class="icon_email">
-                    <use href="./images/icons.svg#icon-email"></use>
-                </svg>
+                        class="sign_up_input"
+                        type="tel"
+                        placeholder="EMAIL"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        title="Enter your mail in this format: name@mail.com"
+                        required>
+                        <svg class="icon-email">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
             </div>
             
             <div class="sign_up_password">
                 <input
-                        class="sign_up_input"
-                        type="password"
-                        placeholder="PASSWORD">
-                        <svg  class="icon_lock">
-                            <use href="./images/icons.svg#icon-lock"></use>
-                        </svg>
+                class="sign_up_input"
+                type="password"
+                placeholder="PASSWORD">
+                <svg class="icon-lock">
+                    <use href="./images/icons.svg#icon-lock"></use>
+                </svg>
             </div>
             
             <div>
@@ -87,8 +85,6 @@
             </div>
             
         </form>
-      </div>
-
     </div>
 
     <div class="container_links">
@@ -96,8 +92,8 @@
         <a href="#" class="login_link">SIGN IN</a>
     </div>
 
-   
+    </div>
+
+    
   </div>
- </div>
- 
- 
+</div>
