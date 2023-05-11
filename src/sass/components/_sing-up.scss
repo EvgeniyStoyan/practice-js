@@ -50,7 +50,7 @@
 }
 
 .icon-cross {
-  fill:#111111;
+  // fill:#111111;
   width: 14px;
   height: 14px;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -69,7 +69,7 @@
   height: 18px;
   right: 16px;
   top: 6px;
-  fill:  #111111;
+  // fill:  #111111;
   
   @media screen and (min-width: 320px) {
    top: 16px;
@@ -204,7 +204,7 @@
   display: flex;
     flex-direction: row;
     align-items: center;
-   
+    background-color: #F6F6F6;
     gap: 24px;
     outline: none;
     border: 2px solid #111111;
@@ -280,6 +280,7 @@ input:focus::placeholder  {
 .sing_up_btn:hover,
 .sing_up_btn:focus{
   background-color: #4f2ee8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hidden {
@@ -346,4 +347,68 @@ a {
     width: 579px;
     padding: 80px 40px 40px;
     }
+}
+
+
+
+.dark-theme.container_forms {
+  background: #202024;
+  border: 2px solid #F6F6F6;
+}
+
+.dark-theme .sing_up_btn{
+  background-color: #F6F6F6;
+  color: #202024;
+}
+
+.dark-theme .sing_up_btn:hover,
+.dark-theme .sing_up_btn:focus{
+  background-color:#4F2EE8;
+  color: #F6F6F6;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-theme input{
+  border: 2px solid #F6F6F6;
+  background-color: #202024;
+
+}
+
+.dark-theme.sign_up_input:hover,
+.dark-theme.sign_up_input:focus{
+  border: 2px solid #4F2EE8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-theme input::placeholder  ,
+.dark-theme input::placeholder  {
+  color: #F6F6F6;
+}
+
+.dark-theme input:hover::placeholder  ,
+.dark-theme input:focus::placeholder  {
+  color: #4F2EE8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-theme .icon-email{
+  fill:  #F6F6F6;
+}
+
+.dark-theme .icon-lock{
+  fill:  #F6F6F6;
+}
+
+.dark-theme.icon-cross{
+  fill: #F6F6F6;
+}
+
+.dark-theme.icon-cross:hover,
+.dark-theme.icon-cross:focus{
+  fill:#4F2EE8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-theme.modal_cross{
+  background: #202024;
 }
